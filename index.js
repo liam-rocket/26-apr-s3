@@ -31,7 +31,7 @@ const multerUpload = multer({
   storage: multerS3({
     s3,
     acl: 'public-read',
-    bucket: '26-Apr-s3',
+    bucket: '26-apr-s3',
     metadata: (request, file, callback) => {
       callback(null, { fieldName: file.fieldname });
     },

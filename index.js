@@ -25,8 +25,6 @@ const secretKey = process.env.UNSPLASH_SECRET_KEY;
 
 const apiUrl = 'https://api.unsplash.com';
 
-// todo: set the name of the upload directory here
-
 const multerUpload = multer({
   storage: multerS3({
     s3,
